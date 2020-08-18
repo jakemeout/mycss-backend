@@ -17,6 +17,6 @@ class StylesController < ApplicationController
     private
 
     def style_params
-        params.require(:styles).permit(:name, :user_id, :properties)
+        params.require(:style).permit(:name, :user_id, :properties)
     end
 end
