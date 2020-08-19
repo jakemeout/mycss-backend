@@ -458,3 +458,463 @@ Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 16.1ms | Allocations: 605
 
 
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/users" for ::1 at 2020-08-18 15:48:39 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"dsfg", "password"=>"[FILTERED]", "user"=>{"username"=>"dsfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (65.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "dsfg"], ["password", "sdfg"], ["created_at", "2020-08-18 19:48:39.279731"], ["updated_at", "2020-08-18 19:48:39.279731"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 83ms (Views: 0.4ms | ActiveRecord: 74.2ms | Allocations: 6078)
+
+
+Started POST "/users" for ::1 at 2020-08-18 15:48:42 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdf"], ["password", "asdfas"], ["created_at", "2020-08-18 19:48:42.752105"], ["updated_at", "2020-08-18 19:48:42.752105"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-18 15:49:02 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasd"], ["created_at", "2020-08-18 19:49:02.449750"], ["updated_at", "2020-08-18 19:49:02.449750"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-18 15:49:25 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"aadsdfasdfa", "password"=>"[FILTERED]", "user"=>{"username"=>"aadsdfasdfa", "password"=>"[FILTERED]"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "aadsdfasdfa"], ["password", "asdfasdf"], ["created_at", "2020-08-18 19:49:25.435620"], ["updated_at", "2020-08-18 19:49:25.435620"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:03:44 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdf"], ["password", "asdfas"], ["created_at", "2020-08-18 20:03:44.952892"], ["updated_at", "2020-08-18 20:03:44.952892"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 2561)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:04:05 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasd", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasd", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasd"], ["password", "asdfasd"], ["created_at", "2020-08-18 20:04:05.846326"], ["updated_at", "2020-08-18 20:04:05.846326"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:08:44 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfg"], ["password", "dfsgsdfg"], ["created_at", "2020-08-18 20:08:44.040376"], ["updated_at", "2020-08-18 20:08:44.040376"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:11:08 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdfffasd", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdfffasd", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdfffasd"], ["password", "asdfasdfasdfaasdf"], ["created_at", "2020-08-18 20:11:08.825958"], ["updated_at", "2020-08-18 20:11:08.825958"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:13:12 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdfffasdasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdfffasdasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdfffasdasdf"], ["password", "asdfasdfasdfaasdfasdf"], ["created_at", "2020-08-18 20:13:12.833987"], ["updated_at", "2020-08-18 20:13:12.833987"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 2533)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:15:10 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"ariel", "password"=>"[FILTERED]", "user"=>{"username"=>"ariel", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ariel"], ["password", "lee"], ["created_at", "2020-08-18 20:15:10.737773"], ["updated_at", "2020-08-18 20:15:10.737773"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:20:52 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"romanesco", "password"=>"[FILTERED]", "user"=>{"username"=>"romanesco", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "romanesco"], ["password", "tada"], ["created_at", "2020-08-18 20:20:52.499040"], ["updated_at", "2020-08-18 20:20:52.499040"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 3.1ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:22:46 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasd", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasd", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasd"], ["password", "asdfasdfasdf"], ["created_at", "2020-08-18 20:22:46.454262"], ["updated_at", "2020-08-18 20:22:46.454262"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 2535)
+
+
+Started POST "/users" for ::1 at 2020-08-18 16:23:08 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdfasdf"], ["password", "asdfasdfasdf"], ["created_at", "2020-08-18 20:23:08.378993"], ["updated_at", "2020-08-18 20:23:08.378993"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2534)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:08:16 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"testy test test test", "password"=>"[FILTERED]", "user"=>{"username"=>"testy test test test", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testy test test test"], ["password", "shakah"], ["created_at", "2020-08-19 00:08:17.041583"], ["updated_at", "2020-08-19 00:08:17.041583"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 4.0ms | Allocations: 5569)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:10:37 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"da da da da", "password"=>"[FILTERED]", "user"=>{"username"=>"da da da da", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "da da da da"], ["password", "dada"], ["created_at", "2020-08-19 00:10:37.862330"], ["updated_at", "2020-08-19 00:10:37.862330"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:17:45 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"bowie", "password"=>"[FILTERED]", "user"=>{"username"=>"bowie", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bowie"], ["password", "dadadada"], ["created_at", "2020-08-19 00:17:45.192544"], ["updated_at", "2020-08-19 00:17:45.192544"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 2549)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:18:40 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"bowie", "password"=>"[FILTERED]", "user"=>{"username"=>"bowie", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "bowie"], ["password", "poop"], ["created_at", "2020-08-19 00:18:40.895315"], ["updated_at", "2020-08-19 00:18:40.895315"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:20:41 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Bowie", "password"=>"[FILTERED]", "user"=>{"username"=>"Bowie", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Bowie"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 00:20:41.064988"], ["updated_at", "2020-08-19 00:20:41.064988"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:21:27 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"testdfsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"testdfsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testdfsdfg"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 00:21:27.630145"], ["updated_at", "2020-08-19 00:21:27.630145"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 2536)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:22:20 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfg"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 00:22:20.630685"], ["updated_at", "2020-08-19 00:22:20.630685"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:23:41 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfoijsadfg", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfoijsadfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfoijsadfg"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 00:23:41.379657"], ["updated_at", "2020-08-19 00:23:41.379657"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:30:10 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test sdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"test sdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test sdfgsdfg"], ["password", "dfgsdfgsdfg"], ["created_at", "2020-08-19 00:30:10.085939"], ["updated_at", "2020-08-19 00:30:10.085939"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 2549)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:34:00 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "asdfasdf"], ["created_at", "2020-08-19 00:34:00.967126"], ["updated_at", "2020-08-19 00:34:00.967126"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:34:40 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "asdfasdf"], ["created_at", "2020-08-19 00:34:40.942015"], ["updated_at", "2020-08-19 00:34:40.942015"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-18 20:37:39 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdf", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdf"], ["password", "dsfgsdfgsdfg"], ["created_at", "2020-08-19 00:37:39.253538"], ["updated_at", "2020-08-19 00:37:39.253538"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 10:03:16 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:16.189535"], ["updated_at", "2020-08-19 14:03:16.189535"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 16.2ms | Allocations: 76187)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec368350c0>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:03:16 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:16.995779"], ["updated_at", "2020-08-19 14:03:16.995779"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 1.0ms | Allocations: 72683)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec34ab91e0>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:03:17 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:17.503685"], ["updated_at", "2020-08-19 14:03:17.503685"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 0.8ms | Allocations: 72673)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec30b927f0>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:03:17 -0400
+Started POST "/users" for ::1 at 2020-08-19 10:03:17 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:17.919784"], ["updated_at", "2020-08-19 14:03:17.919784"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 4.1ms | Allocations: 73288)
+
+
+Started POST "/users" for ::1 at 2020-08-19 10:03:18 -0400
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec3612d048>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:03:18 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:18.320297"], ["updated_at", "2020-08-19 14:03:18.320297"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Create (5.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:18.324554"], ["updated_at", "2020-08-19 14:03:18.324554"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (48.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 3.4ms | Allocations: 75505)
+
+
+Processing by UsersController#create as JSON
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec31403ec0>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 449ms (ActiveRecord: 54.4ms | Allocations: 181339)
+
+
+  Parameters: {"username"=>"asdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfas", "password"=>"[FILTERED]"}}
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec313b0298>):
+  
+app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfas"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:18.905291"], ["updated_at", "2020-08-19 14:03:18.905291"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 48.0ms | Allocations: 155559)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec312fce00>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:03:49 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sadfasdfasd", "password"=>"[FILTERED]", "user"=>{"username"=>"sadfasdfasd", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sadfasdfasd"], ["password", "asdfasdfasdfasdf"], ["created_at", "2020-08-19 14:03:49.039468"], ["updated_at", "2020-08-19 14:03:49.039468"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 1.6ms | Allocations: 72665)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fec311ed8e8>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:04:04 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdf"], ["password", "asdfasdfasdf"], ["created_at", "2020-08-19 14:04:04.965415"], ["updated_at", "2020-08-19 14:04:04.965415"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 22.5ms | Allocations: 76186)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<UsersController:0x00007fc5dab06d58>):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2020-08-19 10:04:57 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdfa", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdfa", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdfa"], ["password", "asdfasdfasdfasdfasdf"], ["created_at", "2020-08-19 14:04:57.295121"], ["updated_at", "2020-08-19 14:04:57.295121"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 30ms (Views: 1.4ms | ActiveRecord: 5.2ms | Allocations: 5652)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
