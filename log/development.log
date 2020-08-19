@@ -918,3 +918,915 @@ Completed 200 OK in 30ms (Views: 1.4ms | ActiveRecord: 5.2ms | Allocations: 5652
 
 
   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/users" for ::1 at 2020-08-19 13:37:16 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdf", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdf"], ["password", "gsgsdfgsdgsdg"], ["created_at", "2020-08-19 17:37:16.776743"], ["updated_at", "2020-08-19 17:37:16.776743"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 11.8ms | Allocations: 6077)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:38:23 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdfasdfas", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdfasdfas", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdfasdfas"], ["password", "asdfasdf"], ["created_at", "2020-08-19 17:38:23.664434"], ["updated_at", "2020-08-19 17:38:23.664434"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:39:05 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfgsdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfgsdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfgsdfgsdfg"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 17:39:05.720415"], ["updated_at", "2020-08-19 17:39:05.720415"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.7ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:47:43 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfg"], ["password", "sdfgsdfggg"], ["created_at", "2020-08-19 17:47:43.130106"], ["updated_at", "2020-08-19 17:47:43.130106"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 2549)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:49:32 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "sdfasdfasdfasdf"], ["created_at", "2020-08-19 17:49:32.378837"], ["updated_at", "2020-08-19 17:49:32.378837"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 1.6ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:50:09 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfgsdf", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfgsdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfgsdf"], ["password", "fsdfgsdfgsdfgsdfgsdfg"], ["created_at", "2020-08-19 17:50:09.270939"], ["updated_at", "2020-08-19 17:50:09.270939"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:51:49 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgdsfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgdsfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgdsfg"], ["password", "sdfgsdfgsdfg"], ["created_at", "2020-08-19 17:51:49.184051"], ["updated_at", "2020-08-19 17:51:49.184051"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.1ms | Allocations: 2533)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:52:14 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"sdfgsdfg", "password"=>"[FILTERED]", "user"=>{"username"=>"sdfgsdfg", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "sdfgsdfg"], ["password", "dfgsdfgsdfsdfg"], ["created_at", "2020-08-19 17:52:14.308072"], ["updated_at", "2020-08-19 17:52:14.308072"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 13:59:50 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "asdfasf"], ["created_at", "2020-08-19 17:59:50.298538"], ["updated_at", "2020-08-19 17:59:50.298538"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 2.2ms | Allocations: 2561)
+
+
+Started GET "/users" for ::1 at 2020-08-19 14:01:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 2164)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:01:35 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"xzcvzxcvzxds", "password"=>"[FILTERED]", "user"=>{"username"=>"xzcvzxcvzxds", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "xzcvzxcvzxds"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 18:01:35.924501"], ["updated_at", "2020-08-19 18:01:35.924501"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2537)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:06:20 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "sdfasdfasdf"], ["created_at", "2020-08-19 18:06:20.454652"], ["updated_at", "2020-08-19 18:06:20.454652"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:08:05 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"testy", "password"=>"[FILTERED]", "user"=>{"username"=>"testy", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testy"], ["password", "jest"], ["created_at", "2020-08-19 18:08:05.795486"], ["updated_at", "2020-08-19 18:08:05.795486"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:12:44 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Jakeywakey", "password"=>"[FILTERED]", "user"=>{"username"=>"Jakeywakey", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jakeywakey"], ["password", "stuppppppp"], ["created_at", "2020-08-19 18:12:44.688406"], ["updated_at", "2020-08-19 18:12:44.688406"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:17:41 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"jakeywakey2", "password"=>"[FILTERED]", "user"=>{"username"=>"jakeywakey2", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jakeywakey2"], ["password", "asdfasdf"], ["created_at", "2020-08-19 18:17:41.616477"], ["updated_at", "2020-08-19 18:17:41.616477"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:18:14 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"doody", "password"=>"[FILTERED]", "user"=>{"username"=>"doody", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "doody"], ["password", "dsafasdf"], ["created_at", "2020-08-19 18:18:14.468785"], ["updated_at", "2020-08-19 18:18:14.468785"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:28:20 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"testy testic", "password"=>"[FILTERED]", "user"=>{"username"=>"testy testic", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testy testic"], ["password", "google"], ["created_at", "2020-08-19 18:28:20.558578"], ["updated_at", "2020-08-19 18:28:20.558578"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.9ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:28:59 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasd", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasd", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasd"], ["password", "asdfasdf"], ["created_at", "2020-08-19 18:28:59.005845"], ["updated_at", "2020-08-19 18:28:59.005845"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 14:57:14 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "asasdf"], ["created_at", "2020-08-19 18:57:14.937914"], ["updated_at", "2020-08-19 18:57:14.937914"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 2550)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:04:35 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Jakeywakey", "password"=>"[FILTERED]", "user"=>{"username"=>"Jakeywakey", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jakeywakey"], ["password", "pass"], ["created_at", "2020-08-19 19:04:35.660350"], ["updated_at", "2020-08-19 19:04:35.660350"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2549)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:12:22 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Momba Womba", "password"=>"[FILTERED]", "user"=>{"username"=>"Momba Womba", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Momba Womba"], ["password", "testy"], ["created_at", "2020-08-19 19:12:22.823111"], ["updated_at", "2020-08-19 19:12:22.823111"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2549)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:19:45 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"test yo test ", "password"=>"[FILTERED]", "user"=>{"username"=>"test yo test ", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test yo test "], ["password", "paspspasd"], ["created_at", "2020-08-19 19:19:45.942798"], ["updated_at", "2020-08-19 19:19:45.942798"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 2551)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:21:04 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdf"], ["password", "asdfasdfasdf"], ["created_at", "2020-08-19 19:21:04.232842"], ["updated_at", "2020-08-19 19:21:04.232842"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:22:06 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"testy test", "password"=>"[FILTERED]", "user"=>{"username"=>"testy test", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testy test"], ["password", "sdfgsdfg"], ["created_at", "2020-08-19 19:22:06.648670"], ["updated_at", "2020-08-19 19:22:06.648670"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2532)
+
+
+Started POST "/users" for ::1 at 2020-08-19 15:25:13 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"asdfasdf", "password"=>"[FILTERED]", "user"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "asdfasdf"], ["password", "asdfasdf"], ["created_at", "2020-08-19 19:25:13.205145"], ["updated_at", "2020-08-19 19:25:13.205145"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 2532)
+
+
+Started GET "/" for ::1 at 2020-08-19 15:43:21 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jakey/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jakey/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 315)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 1588)
+
+
+Started GET "/users" for ::1 at 2020-08-19 15:43:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 4.1ms | Allocations: 4007)
+
+
+Started GET "/users/?username" for ::1 at 2020-08-19 15:57:03 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>nil}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 7804)
+
+
+Started GET "/users/?username=%22jake%20hyde%22" for ::1 at 2020-08-19 15:57:19 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>"\"jake hyde\""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.5ms | Allocations: 3840)
+
+
+Started GET "/users/?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 15:57:31 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>"\"Jake Hyde\""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 3835)
+
+
+Started GET "/user/?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 15:57:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uses/?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 15:57:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/uses"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/user?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 16:01:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 16:01:12 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>"\"Jake Hyde\""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 3871)
+
+
+Started GET "/user?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 16:01:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-08-19 16:03:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 5.4ms | ActiveRecord: 13.5ms | Allocations: 3836)
+
+
+Started GET "/users?username=%22Jake%20Hyde%22" for ::1 at 2020-08-19 16:04:00 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>"\"Jake Hyde\""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 3838)
+
+
+Started GET "/users?username=Jake%20Hyde" for ::1 at 2020-08-19 16:04:21 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3835)
+
+
+Started GET "/user?username=Jake%20Hyde" for ::1 at 2020-08-19 16:04:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:05:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 16ms (ActiveRecord: 0.6ms | Allocations: 2466)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/40" for ::1 at 2020-08-19 16:05:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  [1m[36mStyle Load (0.8ms)[0m  [1m[34mSELECT "styles".* FROM "styles" WHERE "styles"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 200 OK in 31ms (Views: 6.3ms | ActiveRecord: 12.0ms | Allocations: 4350)
+
+
+Started GET "/users/4" for ::1 at 2020-08-19 16:05:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 637)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/4" for ::1 at 2020-08-19 16:09:08 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 15ms (ActiveRecord: 9.7ms | Allocations: 1929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:09:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 637)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:09:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 7ms (ActiveRecord: 2.9ms | Allocations: 1923)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 639)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms | Allocations: 637)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 638)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:04 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 638)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 2.4ms | Allocations: 1921)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 637)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:10:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms | Allocations: 637)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:11:42 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 11ms (ActiveRecord: 4.5ms | Allocations: 2731)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:11:49 -0400
+Processing by UsersController#searchUser as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+Completed 500 Internal Server Error in 61804ms (ActiveRecord: 0.0ms | Allocations: 199704)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `searchUser'
+app/controllers/users_controller.rb:20:in `searchUser'
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:12:51 -0400
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:12:51 -0400
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:12:52 -0400
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:12:52 -0400
+Processing by UsersController#searchUser as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+Completed 500 Internal Server Error in 8311ms (ActiveRecord: 0.0ms | Allocations: 133000)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `searchUser'
+app/controllers/users_controller.rb:20:in `searchUser'
+  [1m[36mUser Load (105.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 448ms (ActiveRecord: 114.0ms | Allocations: 5655351)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:13:11 -0400
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:13:11 -0400
+Started GET "/users/Jake%20Hyde" for ::1 at 2020-08-19 16:13:11 -0400
+Processing by UsersController#searchUser as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+  Parameters: {"id"=>"Jake Hyde"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 133ms (Views: 6.2ms | ActiveRecord: 13.1ms | Allocations: 1551827)
+
+
+  [1m[36mUser Load (59.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 404 Not Found in 132ms (ActiveRecord: 89.4ms | Allocations: 1537360)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Processing by UsersController#searchUser as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+Processing by UsersController#searchUser as HTML
+  Parameters: {"id"=>"Jake Hyde"}
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  [1m[36mUser Load (58.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 200 OK in 152ms (Views: 6.8ms | ActiveRecord: 30.9ms | Allocations: 1627071)
+
+
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 200 OK in 160ms (Views: 7.2ms | ActiveRecord: 27.1ms | Allocations: 1349029)
+
+
+Completed 404 Not Found in 171ms (ActiveRecord: 83.0ms | Allocations: 1452695)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Jake Hyde):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:13:51 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#searchUser as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 5.5ms | Allocations: 5977)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:14:06 -0400
+Processing by UsersController#searchUser as HTML
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 752)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:19:21 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 754)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:21:13 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 753)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:25:36 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:26:29 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:30:13 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:30:58 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:31:33 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:31:41 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 753)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:34:30 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started POST "/users" for ::1 at 2020-08-19 16:35:03 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Jake Hyde", "password"=>"[FILTERED]", "user"=>{"username"=>"Jake Hyde", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jake Hyde"], ["password", "asdf"], ["created_at", "2020-08-19 20:35:03.575783"], ["updated_at", "2020-08-19 20:35:03.575783"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.4ms | Allocations: 2794)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:35:18 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:35:42 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 737)
+
+
+Started POST "/users" for ::1 at 2020-08-19 16:40:18 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"Jake Hyde", "password"=>"[FILTERED]", "user"=>{"username"=>"Jake Hyde", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jake Hyde"], ["password", "asdf"], ["created_at", "2020-08-19 20:40:18.450086"], ["updated_at", "2020-08-19 20:40:18.450086"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 2534)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:40:36 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:41:37 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:42:01 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 737)
+
+
+Started GET "/users/username/Jake%20Hyde" for ::1 at 2020-08-19 16:43:10 -0400
+Processing by UsersController#searchUser as */*
+  Parameters: {"username"=>"Jake Hyde"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Jake Hyde"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `searchUser'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+

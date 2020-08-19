@@ -15,6 +15,12 @@ class UsersController < ApplicationController
         render json: user
     end
 
+    def searchUser
+        user = User.find_by(username: params[:username])
+        
+        render json: user
+    end
+
     private 
    
     def user_params
