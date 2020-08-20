@@ -17,8 +17,7 @@ class UsersController < ApplicationController
 
     def searchUser
         user = User.find_by(username: params[:username])
-        
-        render json: user
+        render json: {user: user, styles: user.styles}
     end
 
     private 
