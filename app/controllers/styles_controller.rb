@@ -14,6 +14,17 @@ class StylesController < ApplicationController
         render json: style
     end
 
+    def update
+        style = Style.find(params[:id])
+        style.update(style_params)
+        render json: style
+    end
+
+    def destroy
+        style = Style.find(params[:id])
+        Style.delete(style)
+    end
+
     private
 
     def style_params
